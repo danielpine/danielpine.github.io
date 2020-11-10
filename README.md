@@ -1,2 +1,0 @@
-# danielpine.github.io
-Me
