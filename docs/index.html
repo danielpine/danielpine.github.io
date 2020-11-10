@@ -36,19 +36,15 @@
     }
 
     a:-webkit-any-link {
-      color: -webkit-link;
       cursor: pointer;
-      text-decoration: underline;
     }
 
-    .btn .icon {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      margin: 1px 8px 0 0;
-    }
-    .btn-github .icon {
-      opacity: 0.6;
+    .icon {
+      display:table-cell;
+      vertical-align:middle;
+      width: 26px;
+      height: 28px;
+      margin-right: 8px;
       background: url(img/blacktocat.png) 0 0 no-repeat;
     }
   </style>
@@ -59,10 +55,8 @@
         <h1>Work smarter, not harder.</h1>
         <h3 class="sub-title">—— Allan F. Mogensen</h3>
         <br />
-        <a
-          href="https://github.com/danielpine/danielpine.github.io"
-          class="btn btn-github"
-          ><span class="icon"></span>View on GitHub</a
+        <a href="https://github.com/danielpine/danielpine.github.io"
+          ><i class="icon"></i>View on GitHub</a
         >
       </div>
     </div>
