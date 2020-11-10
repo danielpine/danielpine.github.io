@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DanielPine's World</title>
+    <title>Welcome to Daniel Pine's World！</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
+  <style>
+    .btn {
+      line-height: 1.5;
+      display: inline-block;
+      background: -webkit-linear-gradient(
+        top,
+        rgba(40, 40, 40, 0.3),
+        rgba(35, 35, 35, 0.3) 50%,
+        rgba(10, 10, 10, 0.3) 50%,
+        rgba(0, 0, 0, 0.3)
+      );
+      padding: 8px 18px;
+      border-radius: 50px;
+      border: 2px solid rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+      border-top: 2px solid #000;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      text-decoration: none;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      text-align: center;
+      margin: 0;
+    }
+
+    a:-webkit-any-link {
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .btn .icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 1px 8px 0 0;
+    }
+    .btn-github .icon {
+      opacity: 0.6;
+      background: url(img/blacktocat.png) 0 0 no-repeat;
+    }
+  </style>
 
   <body>
     <div class="welcome">
@@ -15,9 +59,11 @@
         <h1>Work smarter, not harder.</h1>
         <h3 class="sub-title">—— Allan F. Mogensen</h3>
         <br />
-        <!-- <a href="#services" class="btn btn-dark btn-lg"
-          ><i class="fa fa-fw fa-arrow-down"></i> Find out more</a
-        > -->
+        <a
+          href="https://github.com/danielpine/danielpine.github.io"
+          class="btn btn-github"
+          ><span class="icon"></span>View on GitHub</a
+        >
       </div>
     </div>
   </body>

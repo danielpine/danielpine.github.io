@@ -20,12 +20,12 @@
   canvas.width = w;
   canvas.height = h;
   $(canvas).appendTo($("body").eq(0));
-  console.log($("body").eq(0).html());
   window.onresize = function () {
     w = window.innerWidth;
     h = window.innerHeight;
     canvas.width = w;
     canvas.height = h;
+    render();
   };
 
   function maxOrbit(x, y) {
@@ -93,7 +93,7 @@
     new Star();
   }
 
-  function animation() {
+  function render() {
     ctx.globalCompositeOperation = "source-over";
     ctx.globalAlpha = 0.8;
     ctx.fillStyle = "hsla(" + hue + ", 64%, 6%, 1)";
@@ -102,6 +102,10 @@
     for (var i = 1, l = stars.length; i < l; i++) {
       stars[i].draw();
     }
+  }
+
+  function animation() {
+    render();
     window.requestAnimationFrame(animation);
   }
   animation();
