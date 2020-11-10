@@ -16,7 +16,7 @@
     hue = 217,
     stars = [],
     count = 0,
-    maxStars = 5000;
+    maxStars = 2000;
   canvas.width = w;
   canvas.height = h;
   $(canvas).appendTo($("body").eq(0));
