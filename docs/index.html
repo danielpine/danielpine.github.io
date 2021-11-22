@@ -7,6 +7,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" />
+    <link rel='stylesheet' href='./style.css'>
   </head>
   <style>
     .btn {
@@ -47,6 +48,11 @@
       margin-right: 8px;
       background: url(img/blacktocat.png) 0 0 no-repeat;
     }
+    #world{
+      position: fixed;
+      bottom: -300px;
+      background: none;
+    }
   </style>
 
   <body>
@@ -60,7 +66,11 @@
         >
       </div>
     </div>
+    <div id='world'></div>
   </body>
   <script src="js/jquery.min.js"></script>
   <script src="js/background.js"></script>
+  <script src='js/three.min.js'></script>
+  <script src='js/OrbitControls.js'></script>
+  <script src='js/script.js'></script>
 </html>
